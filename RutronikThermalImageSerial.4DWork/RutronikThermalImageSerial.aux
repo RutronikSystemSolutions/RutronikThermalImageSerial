@@ -1,0 +1,325 @@
+==============================================================
+==============================================================
+4DGL Compiler 2.8.1.0 -- Copyright 2004-2016 4D Labs
+** C:\Users\Gintaras.DESKTOP-0NHE83K\Documents\GitHub\RutronikThermalImageSerial\RutronikThermalImageSerial.4dg
+compiled Thu Jan 26 15:26:12 2023
+
+==============================================================
+==============================================================
+
+
+No Ref for file
+pressed                                1  word     [arg]  (usage 4)
+
+[LINKING]
+function 2, sendBuffData, address 0xa3a, stack usage 0 + 4 
+
+[LINKING]
+function 1, main(main entry point), address 0xa79, stack usage 0 + 4 
+
+[RESERVED WORDS]
+#inherit
+#LISTCODE
+#MODE
+#STACK
+#OPTIMIZE_ON
+#OPTIMIZE_OFF
+byte
+word
+dword
+float
+private
+#IF
+#IFNOT
+#ELSE
+#ENDIF
+#CONST
+#constant
+#USE
+USING
+func
+endfunc
+var
+#STOP
+#DATA
+#ASM
+#END
+#platform
+EXISTS
+#ERROR
+#MESSAGE
+#NOTICE
+sizeof
+argcount
+if
+else
+endif
+while
+wend
+repeat
+until
+forever
+return
+break
+continue
+for
+next
+switch
+case
+default
+endswitch
+print
+goto
+gosub
+endsub
+mcall
+lookup8
+lookup16
+
+[MACRO]
+
+[CONSTANTS]
+__MAXMEM                          00007652      30290  (usage 1)
+__MAXPROG                         00007FEE      32750  (usage 1)
+COM0                              0000F804      63492  (usage 3)
+LANDSCAPE                         00000000          0  (usage 3)
+PIXXI                             00000004          4  (usage 3)
+SCREEN_MODE                       00000017         23  (usage 3)
+TOUCH_ENABLE                      00000000          0  (usage 3)
+WHITE                             0000FFFF      65535  (usage 3)
+
+[PmmC FUNCTIONS]
+com_Count                         FFFFFF86        -122  args=0 r=1  (usage 9)
+com_Init                          FFFFFF88        -120  args=3 r=0  (usage 3)
+com_SetBaud                       FFFFFF72        -142  args=2 r=1  (usage 3)
+file_Mount                        FFFFFF03        -253  args=0 r=1  (usage 6)
+gfx_Cls                           FFFFFFCD         -51  args=0 r=0  (usage 6)
+gfx_MoveTo                        FFFFFFCC         -52  args=2 r=0  (usage 3)
+gfx_RectangleFilled               FFFFFFC4         -60  args=5 r=0  (usage 3)
+gfx_Set                           FFFFFFCE         -50  args=2 r=0  (usage 3)
+media_InitFlash                   FFFFFE69        -407  args=1 r=1  (usage 3)
+pause                             FFFFFFFA          -6  args=1 r=0  (usage 6)
+putch                             FFFFFFFE          -2  args=1 r=0  (usage 3)
+putstr                            FFFFFFF7          -9  args=1 r=1  (usage 6)
+serin                             FFFFFFFF          -1  args=0 r=1  (usage 12)
+serout                            FFFFFFFD          -3  args=1 r=0  (usage 5)
+touch_Set                         FFFFFF38        -200  args=1 r=0  (usage 3)
+txt_BGcolour                      FFFFFFE6         -26  args=1 r=1  (usage 3)
+txt_FGcolour                      FFFFFFE7         -25  args=1 r=1  (usage 6)
+txt_FontID                        FFFFFFE5         -27  args=1 r=1  (usage 3)
+
+[USER FUNCTIONS]
+sendBuffData                      00000A3A  args=0 r=0  (usage 6)
+
+[GLOBAL VARIABLES]
+bufful                              4799  word       (usage 15)
+buttonPressed                       4808  word       (usage 3)
+cellColour                          4805  word       (usage 9)
+colours                              540  word[256]   (usage 6)
+data1                               4800  word       (usage 18)
+data2                               4801  word       (usage 15)
+posleft                             4806  word       (usage 7)
+postop                              4807  word       (usage 7)
+RXbuff                               798  word[4000]   (usage 3)
+textChar                            4804  word       (usage 18)
+textColour                          4798  word       (usage 10)
+x1                                  4802  word       (usage 12)
+y1                                  4803  word       (usage 12)
+
+[PRIVATE VARIABLES]
+
+[DATA]
+0007: FF FF FF FF F1 D8 00 00 00 00 FF 00 00 FF 00 08     ÿÿÿÿñØ....ÿ..ÿ..
+0017: 08 3C 20 20 78 20 60 AC 00 44 48 50 2C 44 08 1C     .<  x `¬.DHP,D..
+0027: 00 44 48 50 2C 54 1C 04 00 64 28 50 2C 54 1C 04     .DHP,T...d(P,T..
+0037: 00 00 10 00 7C 00 10 00 00 3C 42 99 A1 A1 99 42     ....|....<B™¡¡™B
+0047: 3C 00 04 02 FF FF 02 04 00 00 20 40 FF FF 40 20     <...ÿÿ.... @ÿÿ@ 
+0057: 00 18 3C 5A 18 18 18 18 18 18 18 18 18 18 5A 3C     ..<Z..........Z<
+0067: 18 0F 07 0F 1D 38 70 20 00 00 04 0E 1C B8 F0 E0     .....8p .....¸ðà
+0077: F0 00 20 70 38 1D 0F 07 0F F0 E0 F0 B8 1C 0E 04     ð. p8....ðàð¸...
+0087: 00 00 3C 3C 00 7E FF FF FF FC FC 3C 30 30 30 30     ..<<.~ÿÿÿüü<0000
+0097: 30 FF 3C 3C 3C 3C 00 00 00 3F 3F 3C 0C 0C 0C 0C     0ÿ<<<<...??<....
+00A7: 0C 3C 3C 3C 3C 3C 3C 3C 3C 00 3C 3C 00 7E FF BD     .<<<<<<<<.<<.~ÿ½
+00B7: DB 7E 3C 66 66 E7 C3 C3 C3 00 38 3C 00 38 78 7C     Û~<ffçÃÃÃ.8<.8x|
+00C7: 7F 7C 3E 1B 1E 1C 18 38 38 00 38 3C 00 39 79 DF     |>....88.8<.9yß
+00D7: DC 7C 3F 1F 3B F3 C3 80 00 18 3C 66 24 E7 BD 99     Ü|?.;óÃ€..<f$ç½™
+00E7: DB 00 00 00 00 0F 0F 0F 0F 0F 0F 0F 0F 00 00 00     Û...............
+00F7: 00 00 00 00 00 F0 F0 F0 F0 F0 F0 F0 F0 00 00 00     .....ðððððððð...
+0107: 00 F0 F0 F0 F0 0F 0F 0F 0F 00 00 00 00 FF FF FF     .ðððð........ÿÿÿ
+0117: FF 00 00 00 00 00 00 00 00 10 10 10 10 10 00 10     ÿ...............
+0127: 00 28 28 28 00 00 00 00 00 28 28 7C 28 7C 28 28     .(((.....((|(|((
+0137: 00 10 3C 50 38 14 78 10 00 60 64 08 10 20 4C 0C     ..<P8.x..`d.. L.
+0147: 00 20 50 50 20 54 48 34 00 08 08 10 00 00 00 00     . PP TH4........
+0157: 00 10 20 40 40 40 20 10 00 10 08 04 04 04 08 10     .. @@@ .........
+0167: 00 10 54 38 10 38 54 10 00 00 10 10 7C 10 10 00     ..T8.8T.....|...
+0177: 00 00 00 00 00 10 10 20 00 00 00 00 7C 00 00 00     ....... ....|...
+0187: 00 00 00 00 00 00 00 10 00 00 04 08 10 20 40 00     ............. @.
+0197: 00 38 44 4C 54 64 44 38 00 10 30 10 10 10 10 38     .8DLTdD8..0....8
+01A7: 00 38 44 04 18 20 40 7C 00 7C 04 08 18 04 44 38     .8D.. @|.|....D8
+01B7: 00 08 18 28 48 7C 08 08 00 7C 40 78 04 04 44 38     ...(H|...|@x..D8
+01C7: 00 1C 20 40 78 44 44 38 00 7C 04 08 10 20 20 20     .. @xDD8.|...   
+01D7: 00 38 44 44 38 44 44 38 00 38 44 44 3C 04 08 70     .8DD8DD8.8DD<..p
+01E7: 00 00 00 10 00 10 00 00 00 00 00 10 00 10 10 20     ............... 
+01F7: 00 08 10 20 40 20 10 08 00 00 00 7C 00 7C 00 00     ... @ .....|.|..
+0207: 00 20 10 08 04 08 10 20 00 38 44 08 10 10 00 10     . ..... .8D.....
+0217: 00 38 44 54 5C 58 40 3C 00 10 28 44 44 7C 44 44     .8DT\X@<..(DD|DD
+0227: 00 78 44 44 78 44 44 78 00 38 44 40 40 40 44 38     .xDDxDDx.8D@@@D8
+0237: 00 78 44 44 44 44 44 78 00 7C 40 40 78 40 40 7C     .xDDDDDx.|@@x@@|
+0247: 00 7C 40 40 78 40 40 40 00 3C 40 40 40 4C 44 3C     .|@@x@@@.<@@@LD<
+0257: 00 44 44 44 7C 44 44 44 00 38 10 10 10 10 10 38     .DDD|DDD.8.....8
+0267: 00 04 04 04 04 04 44 38 00 44 48 50 60 50 48 44     ......D8.DHP`PHD
+0277: 00 40 40 40 40 40 40 7C 00 44 6C 54 54 44 44 44     .@@@@@@|.DlTTDDD
+0287: 00 44 44 64 54 4C 44 44 00 38 44 44 44 44 44 38     .DDdTLDD.8DDDDD8
+0297: 00 78 44 44 78 40 40 40 00 38 44 44 44 54 48 34     .xDDx@@@.8DDDTH4
+02A7: 00 78 44 44 78 50 48 44 00 38 44 40 38 04 44 38     .xDDxPHD.8D@8.D8
+02B7: 00 7C 10 10 10 10 10 10 00 44 44 44 44 44 44 38     .|.......DDDDDD8
+02C7: 00 44 44 44 44 44 28 10 00 44 44 44 54 54 6C 44     .DDDDD(..DDDTTlD
+02D7: 00 44 44 28 10 28 44 44 00 44 44 28 10 10 10 10     .DD(.(DD.DD(....
+02E7: 00 7C 04 08 10 20 40 7C 00 7C 60 60 60 60 60 7C     .|... @|.|`````|
+02F7: 00 00 40 20 10 08 04 00 00 7C 0C 0C 0C 0C 0C 7C     ..@ .....|.....|
+0307: 00 00 00 10 28 44 00 00 00 00 00 00 00 00 00 7C     ....(D.........|
+0317: 00 20 20 10 00 00 00 00 00 00 00 34 4C 44 4C 34     .  ........4LDL4
+0327: 00 40 40 58 64 44 64 58 00 00 00 1C 20 20 20 1C     .@@XdDdX....   .
+0337: 00 04 04 34 4C 44 4C 34 00 00 00 38 44 7C 40 38     ...4LDL4...8D|@8
+0347: 00 08 10 10 38 10 10 10 00 00 00 34 4C 44 3C 04     ....8......4LD<.
+0357: 38 40 40 78 44 44 44 44 00 10 00 30 10 10 10 38     8@@xDDDD...0...8
+0367: 00 08 00 08 08 08 08 08 30 40 40 48 50 70 48 44     ........0@@HPpHD
+0377: 00 30 10 10 10 10 10 38 00 00 00 6C 52 52 52 52     .0.....8...lRRRR
+0387: 00 00 00 78 44 44 44 44 00 00 00 38 44 44 44 38     ...xDDDD...8DDD8
+0397: 00 00 00 58 64 44 64 58 40 00 00 34 4C 44 4C 34     ...XdDdX@..4LDL4
+03A7: 06 00 00 58 60 40 40 40 00 00 00 3C 40 38 04 78     ...X`@@@...<@8.x
+03B7: 00 10 10 7C 10 10 10 10 00 00 00 44 44 44 44 3C     ...|.......DDDD<
+03C7: 00 00 00 44 44 28 28 10 00 00 00 52 52 52 52 2C     ...DD((....RRRR,
+03D7: 00 00 00 44 28 10 28 44 00 00 00 24 24 24 3C 04     ...D(.(D...$$$<.
+03E7: 38 00 00 7C 08 10 20 7C 00 0C 10 10 20 10 10 0C     8..|.. |.... ...
+03F7: 00 10 10 10 00 10 10 10 00 60 10 10 08 10 10 60     .........`.....`
+0407: 00 00 00 04 38 40 00 00 00 FF FF FF FF FF FF FF     ....8@...ÿÿÿÿÿÿÿ
+0417: FF 00 FF FF FF FF FF FF FF 80 80 80 80 80 80 80     ÿ.ÿÿÿÿÿÿÿ€€€€€€€
+0427: 80 00 1C 3C 00 1C 1E 3E FE 3E 7C D8 78 38 18 1C     €..<...>þ>|Øx8..
+0437: 1C 00 00 00 00 AA 55 AA 55 A0 50 A0 50 A0 50 A0     .....ªUªU P P P 
+0447: 50 AA 55 AA 55 AA 55 AA 55 00 18 3C 7E 7E 3C 18     PªUªUªUªU..<~~<.
+0457: 00 00 00 00 00 00 00 FF FF 00 00 FF FF FF FF FF     .......ÿÿ..ÿÿÿÿÿ
+0467: FF 18 18 3C 7E FF DB 18 3C 3C 18 DB FF 7E 3C 18     ÿ..<~ÿÛ.<<.Ûÿ~<.
+0477: 18 00 1C 3C 00 9C 9E FB 3B 3E FC F8 DC CF C3 01     ...<.œžû;>üøÜÏÃ.
+0487: 00 C0 F0 FC FF FF FC F0 C0 18 18 3C 3C 7E 7E FF     .ÀðüÿÿüðÀ..<<~~ÿ
+0497: FF 00 00 00 00 00 00 00 FF FE FE FE FE FE FE FE     ÿ.......ÿþþþþþþþ
+04A7: FE 3C 52 3C 80 BC FF 3D 3D 3C 4A 3C 01 3D FF BC     þ<R<€¼ÿ==<J<.=ÿ¼
+04B7: BC AA 55 AA 55 00 00 00 00 0A 05 0A 05 0A 05 0A     ¼ªUªU...........
+04C7: 05 3C 7E FF FF FF FF 7E 3C C0 C0 C0 C0 C0 C0 C0     .<~ÿÿÿÿ~<ÀÀÀÀÀÀÀ
+04D7: C0 E0 E0 E0 E0 E0 E0 E0 E0 F8 F8 F8 F8 F8 F8 F8     Àààààààààøøøøøøø
+04E7: F8 30 38 9C FF FF 9C 38 30 0C 1C 39 FF FF 39 1C     ø08œÿÿœ80..9ÿÿ9.
+04F7: 0C 00 66 7E 42 C3 FF 18 00 00 18 FF C3 42 7E 66     ..f~BÃÿ....ÿÃB~f
+0507: 00 03 0F 3F FF FF 3F 0F 03 FF FF 7E 7E 3C 3C 18     ...?ÿÿ?..ÿÿ~~<<.
+0517: 18 00 00 00 00 00 00 00 00 F0 F0 F0 00 00 00 00     .........ððð....
+0527: 00 0F 0F 0F 00 00 00 00 00 FF FF FF 00 00 00 00     .........ÿÿÿ....
+0537: 00 00 00 00 F0 F0 00 00 00 F0 F0 F0 F0 F0 00 00     ....ðð...ððððð..
+0547: 00 0F 0F 0F F0 F0 00 00 00 FF FF FF F0 F0 00 00     ....ðð...ÿÿÿðð..
+0557: 00 00 00 00 0F 0F 00 00 00 F0 F0 F0 0F 0F 00 00     .........ððð....
+0567: 00 0F 0F 0F 0F 0F 00 00 00 FF FF FF 0F 0F 00 00     .........ÿÿÿ....
+0577: 00 00 00 00 FF FF 00 00 00 F0 F0 F0 FF FF 00 00     ....ÿÿ...ðððÿÿ..
+0587: 00 0F 0F 0F FF FF 00 00 00 FF FF FF FF FF 00 00     ....ÿÿ...ÿÿÿÿÿ..
+0597: 00 00 00 00 00 00 F0 F0 F0 F0 F0 F0 00 00 F0 F0     ......ðððððð..ðð
+05A7: F0 0F 0F 0F 00 00 F0 F0 F0 FF FF FF 00 00 F0 F0     ð.....ðððÿÿÿ..ðð
+05B7: F0 00 00 00 F0 F0 F0 F0 F0 F0 F0 F0 F0 F0 F0 F0     ð...ðððððððððððð
+05C7: F0 0F 0F 0F F0 F0 F0 F0 F0 FF FF FF F0 F0 F0 F0     ð...ðððððÿÿÿðððð
+05D7: F0 00 00 00 0F 0F F0 F0 F0 F0 F0 F0 0F 0F F0 F0     ð.....ðððððð..ðð
+05E7: F0 0F 0F 0F 0F 0F F0 F0 F0 FF FF FF 0F 0F F0 F0     ð.....ðððÿÿÿ..ðð
+05F7: F0 00 00 00 FF FF F0 F0 F0 F0 F0 F0 FF FF F0 F0     ð...ÿÿððððððÿÿðð
+0607: F0 0F 0F 0F FF FF F0 F0 F0 FF FF FF FF FF F0 F0     ð...ÿÿðððÿÿÿÿÿðð
+0617: F0 01 03 07 0F 1F 3F 7F FF 80 C0 E0 F0 F8 FC FE     ð.....?ÿ€Ààðøüþ
+0627: FF FF FF 7E 3C 00 00 00 00 FC FC FC FC FC FC FC     ÿÿÿ~<....üüüüüüü
+0637: FC 00 00 3C 3C 3C 3C 00 00 18 3C 7E FF FF 7E 3C     ü..<<<<...<~ÿÿ~<
+0647: 18 00 00 00 18 18 00 00 00 0F 0F 07 03 00 00 00     ................
+0657: 00 18 18 18 FF FF 18 18 18 00 00 00 00 C0 E0 F0     ....ÿÿ.......Ààð
+0667: F0 01 02 04 08 10 20 40 80 03 07 0F 0F 0F 0F 07     ð..... @€.......
+0677: 03 18 18 18 FF FF 00 00 00 18 18 18 1F 1F 18 18     ....ÿÿ..........
+0687: 18 00 00 00 F8 F8 18 18 18 18 18 18 1F 1F 00 00     ....øø..........
+0697: 00 09 20 04 80 11 40 08 02 52 44 2D C4 11 B4 23     .. .€.@..RD-Ä.´#
+06A7: 4A 00 00 00 00 3C 7E FF FF 00 10 2C 3A 5C 34 04     J....<~ÿÿ..,:\4.
+06B7: 00 66 FF FF FF 7E 3C 18 18 18 3C 18 42 E7 42 18     .fÿÿÿ~<...<.BçB.
+06C7: 3C 18 18 18 18 18 18 18 18 00 00 00 00 03 07 0F     <...............
+06D7: 0F 81 42 24 18 18 24 42 81 F0 F0 E0 C0 00 00 00     .B$..$BððàÀ...
+06E7: 00 80 40 20 10 08 04 02 01 C0 E0 F0 F0 F0 F0 E0     .€@ .....Ààððððà
+06F7: C0 00 00 00 FF FF 18 18 18 18 18 18 F8 F8 18 18     À...ÿÿ......øø..
+0707: 18 00 00 00 1F 1F 18 18 18 18 18 18 F8 F8 00 00     ............øø..
+0717: 00 00 00 00 00 00 0F 0F 0F F0 F0 F0 00 00 0F 0F     .........ððð....
+0727: 0F 0F 0F 0F 00 00 0F 0F 0F FF FF FF 00 00 0F 0F     .........ÿÿÿ....
+0737: 0F 00 00 00 F0 F0 0F 0F 0F F0 F0 F0 F0 F0 0F 0F     ....ðð...ððððð..
+0747: 0F 0F 0F 0F F0 F0 0F 0F 0F FF FF FF F0 F0 0F 0F     ....ðð...ÿÿÿðð..
+0757: 0F 00 00 00 0F 0F 0F 0F 0F F0 F0 F0 0F 0F 0F 0F     .........ððð....
+0767: 0F 0F 0F 0F 0F 0F 0F 0F 0F FF FF FF 0F 0F 0F 0F     .........ÿÿÿ....
+0777: 0F 00 00 00 FF FF 0F 0F 0F F0 F0 F0 FF FF 0F 0F     ....ÿÿ...ðððÿÿ..
+0787: 0F 0F 0F 0F FF FF 0F 0F 0F FF FF FF FF FF 0F 0F     ....ÿÿ...ÿÿÿÿÿ..
+0797: 0F 00 00 00 00 00 FF FF FF F0 F0 F0 00 00 FF FF     ......ÿÿÿððð..ÿÿ
+07A7: FF 0F 0F 0F 00 00 FF FF FF FF FF FF 00 00 FF FF     ÿ.....ÿÿÿÿÿÿ..ÿÿ
+07B7: FF 00 00 00 F0 F0 FF FF FF F0 F0 F0 F0 F0 FF FF     ÿ...ððÿÿÿðððððÿÿ
+07C7: FF 0F 0F 0F F0 F0 FF FF FF FF FF FF F0 F0 FF FF     ÿ...ððÿÿÿÿÿÿððÿÿ
+07D7: FF 00 00 00 0F 0F FF FF FF F0 F0 F0 0F 0F FF FF     ÿ.....ÿÿÿððð..ÿÿ
+07E7: FF 0F 0F 0F 0F 0F FF FF FF FF FF FF 0F 0F FF FF     ÿ.....ÿÿÿÿÿÿ..ÿÿ
+07F7: FF 00 00 00 FF FF FF FF FF F0 F0 F0 FF FF FF FF     ÿ...ÿÿÿÿÿðððÿÿÿÿ
+0807: FF 0F 0F 0F FF FF FF FF FF FF FF FF FF FF FF FF     ÿ...ÿÿÿÿÿÿÿÿÿÿÿÿ
+0817: FF 00 00 0A 00 15 00 1F 00 20 01 2A 01 35 01 3F     ÿ........ .*.5.?
+0827: 01 40 02 4A 02 55 02 5F 02 60 03 6A 03 75 03 7F     .@.J.U._.`.j.u.
+0837: 03 80 04 8A 04 95 04 9F 04 A0 05 AA 05 B5 05 BF     .€.Š.•.Ÿ. .ª.µ.¿
+0847: 05 C0 06 CA 06 D5 06 DF 06 E0 07 EA 07 F5 07 FF     .À.Ê.Õ.ß.à.ê.õ.ÿ
+0857: 07 00 20 0A 20 15 20 1F 20 20 21 2A 21 35 21 3F     .. . . .  !*!5!?
+0867: 21 40 22 4A 22 55 22 5F 22 60 23 6A 23 75 23 7F     !@"J"U"_"`#j#u#
+0877: 23 80 24 8A 24 95 24 9F 24 A0 25 AA 25 B5 25 BF     #€$Š$•$Ÿ$ %ª%µ%¿
+0887: 25 C0 26 CA 26 D5 26 DF 26 E0 27 EA 27 F5 27 FF     %À&Ê&Õ&ß&à'ê'õ'ÿ
+0897: 27 00 48 0A 48 15 48 1F 48 20 49 2A 49 35 49 3F     '.H.H.H.H I*I5I?
+08A7: 49 40 4A 4A 4A 55 4A 5F 4A 60 4B 6A 4B 75 4B 7F     I@JJJUJ_J`KjKuK
+08B7: 4B 80 4C 8A 4C 95 4C 9F 4C A0 4D AA 4D B5 4D BF     K€LŠL•LŸL MªMµM¿
+08C7: 4D C0 4E CA 4E D5 4E DF 4E E0 4F EA 4F F5 4F FF     MÀNÊNÕNßNàOêOõOÿ
+08D7: 4F 00 68 0A 68 15 68 1F 68 20 69 2A 69 35 69 3F     O.h.h.h.h i*i5i?
+08E7: 69 40 6A 4A 6A 55 6A 5F 6A 60 6B 6A 6B 75 6B 7F     i@jJjUj_j`kjkuk
+08F7: 6B 80 6C 8A 6C 95 6C 9F 6C A0 6D AA 6D B5 6D BF     k€lŠl•lŸl mªmµm¿
+0907: 6D C0 6E CA 6E D5 6E DF 6E E0 6F EA 6F F5 6F FF     mÀnÊnÕnßnàoêoõoÿ
+0917: 6F 00 90 0A 90 15 90 1F 90 20 91 2A 91 35 91 3F     o.... ‘*‘5‘?
+0927: 91 40 92 4A 92 55 92 5F 92 60 93 6A 93 75 93 7F     ‘@’J’U’_’`“j“u“
+0937: 93 80 94 8A 94 95 94 9F 94 A0 95 AA 95 B5 95 BF     “€”Š”•”Ÿ” •ª•µ•¿
+0947: 95 C0 96 CA 96 D5 96 DF 96 E0 97 EA 97 F5 97 FF     •À–Ê–Õ–ß–à—ê—õ—ÿ
+0957: 97 00 B0 0A B0 15 B0 1F B0 20 B1 2A B1 35 B1 3F     —.°.°.°.° ±*±5±?
+0967: B1 40 B2 4A B2 55 B2 5F B2 60 B3 6A B3 75 B3 7F     ±@²J²U²_²`³j³u³
+0977: B3 80 B4 8A B4 95 B4 9F B4 A0 B5 AA B5 B5 B5 BF     ³€´Š´•´Ÿ´ µªµµµ¿
+0987: B5 C0 B6 CA B6 D5 B6 DF B6 E0 B7 EA B7 F5 B7 FF     µÀ¶Ê¶Õ¶ß¶à·ê·õ·ÿ
+0997: B7 00 D8 0A D8 15 D8 1F D8 20 D9 2A D9 35 D9 3F     ·.Ø.Ø.Ø.Ø Ù*Ù5Ù?
+09A7: D9 40 DA 4A DA 55 DA 5F DA 60 DB 6A DB 75 DB 7F     Ù@ÚJÚUÚ_Ú`ÛjÛuÛ
+09B7: DB 80 DC 8A DC 95 DC 9F DC A0 DD AA DD B5 DD BF     Û€ÜŠÜ•ÜŸÜ ÝªÝµÝ¿
+09C7: DD C0 DE CA DE D5 DE DF DE E0 DF EA DF F5 DF FF     ÝÀÞÊÞÕÞßÞàßêßõßÿ
+09D7: DF 00 F8 0A F8 15 F8 1F F8 20 F9 2A F9 35 F9 3F     ß.ø.ø.ø.ø ù*ù5ù?
+09E7: F9 40 FA 4A FA 55 FA 5F FA 60 FB 6A FB 75 FB 7F     ù@úJúUú_ú`ûjûuû
+09F7: FB 80 FC 8A FC 95 FC 9F FC A0 FD AA FD B5 FD BF     û€üŠü•üŸü ýªýµý¿
+0A07: FD C0 FE CA FE D5 FE DF FE E0 FF EA FF F5 FF FF     ýÀþÊþÕþßþàÿêÿõÿÿ
+0A17: FF 4D 6F 75 6E 74 69 6E 67 2E 2E 2E 0A 00 44 72     ÿMounting.....Dr
+0A27: 69 76 65 20 6E 6F 74 20 6D 6F 75 6E 74 65 64 2E     ive not mounted.
+0A37: 2E 2E 00                                            ...
+
+[__MAXPROG]
+32750
+[__MAXMEM]
+30290
+
+[PROGRAM]
+main
+[CODESIZE]
+3133
+[MEMSIZE]
+4810
+[ARGCOUNT]
+0
+[RETURNS]
+NO
+[STACKSIZE]
+0 (AUTO)
+[STACK_ESTIMATE]
+12   (nb:- worst case estimate)
+[MODE]
+0
+
+[PROJECT]
+C:\Users\Gintaras.DESKTOP-0NHE83K\Documents\GitHub\RutronikThermalImageSerial\RutronikThermalImageSerial.4dg
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\Gen4-uLCD-35P4CT-CLB.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\PIXXI44functions.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\VisualConst.inc
+C:\Users\Gintaras.DESKTOP-0NHE83K\Documents\GitHub\RutronikThermalImageSerial\RutronikThermalImageSerial.4DWork\RutronikThermalImageSerialConst.inc
