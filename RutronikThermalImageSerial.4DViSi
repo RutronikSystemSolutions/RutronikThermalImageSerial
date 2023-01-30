@@ -31,13 +31,13 @@ end
 Form
     Name                         Form1
     Alias                        Form1
-    Bgtype                       Color
+    Bgtype                       Image
     Color                        BLACK
-    Image                        (None)
-    Source.Height                0
+    Image                        x_ss2_background.bmp
+    Source.Height                320
     Source.Left                  0
     Source.Top                   0
-    Source.Width                 0
+    Source.Width                 480
     OnActivate                   ''
     OnCreate                     ''
     OnRepeat                     ''

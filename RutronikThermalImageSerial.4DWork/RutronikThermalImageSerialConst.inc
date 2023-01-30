@@ -1,10 +1,11 @@
-// File generated 2023-01-26 15:20:36
+// File generated 2023-01-30 09:56:12
 // Warning! This is a generated file, any manual changes will be
 // lost during the next generation.
 
 #constant  IFONT_OFFSET     0
 // object indexes into ImageControl
 #CONST
+    iForm1          // offset 0x0
 #END
 
 // inherents in program memory
@@ -12,3 +13,6 @@
 #END
 
 
+#IFNOT EXISTS NOGLOBALS
+var hndl ;
+#ENDIF

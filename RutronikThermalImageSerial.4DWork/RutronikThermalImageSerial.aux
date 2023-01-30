@@ -2,7 +2,7 @@
 ==============================================================
 4DGL Compiler 2.8.1.0 -- Copyright 2004-2016 4D Labs
 ** C:\Users\Gintaras.DESKTOP-0NHE83K\Documents\GitHub\RutronikThermalImageSerial\RutronikThermalImageSerial.4dg
-compiled Thu Jan 26 15:26:12 2023
+compiled Mon Jan 30 10:06:46 2023
 
 ==============================================================
 ==============================================================
@@ -12,10 +12,10 @@ No Ref for file
 pressed                                1  word     [arg]  (usage 4)
 
 [LINKING]
-function 2, sendBuffData, address 0xa3a, stack usage 0 + 4 
+function 2, sendBuffData, address 0xa54, stack usage 0 + 4 
 
 [LINKING]
-function 1, main(main entry point), address 0xa79, stack usage 0 + 4 
+function 1, main(main entry point), address 0xa93, stack usage 0 + 4 
 
 [RESERVED WORDS]
 #inherit
@@ -82,6 +82,7 @@ lookup16
 __MAXMEM                          00007652      30290  (usage 1)
 __MAXPROG                         00007FEE      32750  (usage 1)
 COM0                              0000F804      63492  (usage 3)
+iForm1                            00000000          0  (usage 3)
 LANDSCAPE                         00000000          0  (usage 3)
 PIXXI                             00000004          4  (usage 3)
 SCREEN_MODE                       00000017         23  (usage 3)
@@ -92,11 +93,13 @@ WHITE                             0000FFFF      65535  (usage 3)
 com_Count                         FFFFFF86        -122  args=0 r=1  (usage 9)
 com_Init                          FFFFFF88        -120  args=3 r=0  (usage 3)
 com_SetBaud                       FFFFFF72        -142  args=2 r=1  (usage 3)
+file_LoadImageControl             FFFFFF04        -252  args=3 r=1  (usage 3)
 file_Mount                        FFFFFF03        -253  args=0 r=1  (usage 6)
 gfx_Cls                           FFFFFFCD         -51  args=0 r=0  (usage 6)
 gfx_MoveTo                        FFFFFFCC         -52  args=2 r=0  (usage 3)
 gfx_RectangleFilled               FFFFFFC4         -60  args=5 r=0  (usage 3)
 gfx_Set                           FFFFFFCE         -50  args=2 r=0  (usage 3)
+img_Show                          FFFFFF47        -185  args=2 r=1  (usage 3)
 media_InitFlash                   FFFFFE69        -407  args=1 r=1  (usage 3)
 pause                             FFFFFFFA          -6  args=1 r=0  (usage 6)
 putch                             FFFFFFFE          -2  args=1 r=0  (usage 3)
@@ -109,22 +112,23 @@ txt_FGcolour                      FFFFFFE7         -25  args=1 r=1  (usage 6)
 txt_FontID                        FFFFFFE5         -27  args=1 r=1  (usage 3)
 
 [USER FUNCTIONS]
-sendBuffData                      00000A3A  args=0 r=0  (usage 6)
+sendBuffData                      00000A54  args=0 r=0  (usage 6)
 
 [GLOBAL VARIABLES]
-bufful                              4799  word       (usage 15)
-buttonPressed                       4808  word       (usage 3)
-cellColour                          4805  word       (usage 9)
-colours                              540  word[256]   (usage 6)
-data1                               4800  word       (usage 18)
-data2                               4801  word       (usage 15)
-posleft                             4806  word       (usage 7)
-postop                              4807  word       (usage 7)
-RXbuff                               798  word[4000]   (usage 3)
-textChar                            4804  word       (usage 18)
-textColour                          4798  word       (usage 10)
-x1                                  4802  word       (usage 12)
-y1                                  4803  word       (usage 12)
+bufful                              4800  word       (usage 15)
+buttonPressed                       4809  word       (usage 3)
+cellColour                          4806  word       (usage 9)
+colours                              541  word[256]   (usage 6)
+data1                               4801  word       (usage 18)
+data2                               4802  word       (usage 15)
+hndl                                 540  word       (usage 6)
+posleft                             4807  word       (usage 7)
+postop                              4808  word       (usage 7)
+RXbuff                               799  word[4000]   (usage 3)
+textChar                            4805  word       (usage 18)
+textColour                          4799  word       (usage 10)
+x1                                  4803  word       (usage 12)
+y1                                  4804  word       (usage 12)
 
 [PRIVATE VARIABLES]
 
@@ -292,7 +296,8 @@ y1                                  4803  word       (usage 12)
 0A07: FD C0 FE CA FE D5 FE DF FE E0 FF EA FF F5 FF FF     ýÀþÊþÕþßþàÿêÿõÿÿ
 0A17: FF 4D 6F 75 6E 74 69 6E 67 2E 2E 2E 0A 00 44 72     ÿMounting.....Dr
 0A27: 69 76 65 20 6E 6F 74 20 6D 6F 75 6E 74 65 64 2E     ive not mounted.
-0A37: 2E 2E 00                                            ...
+0A37: 2E 2E 00 52 55 54 52 4F 4E 7E 31 2E 64 61 74 00     ...RUTRON~1.dat.
+0A47: 52 55 54 52 4F 4E 7E 31 2E 67 63 69 00              RUTRON~1.gci.
 
 [__MAXPROG]
 32750
@@ -302,9 +307,9 @@ y1                                  4803  word       (usage 12)
 [PROGRAM]
 main
 [CODESIZE]
-3133
+3188
 [MEMSIZE]
-4810
+4811
 [ARGCOUNT]
 0
 [RETURNS]
